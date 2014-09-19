@@ -1,113 +1,35 @@
 Acerca de este Fork de Odoo v7.0
 ================================
 
-Este clon de Odoo fue creado para satisfacer los requerimientos de localización de nuestros clientes ubicados en sudamerica de habla hispana. Por lo tanto consideramos que si te encuentras en Panamá, Colombia, Ecuador, Perú, Chile, Argentina, Bolivia, Paraguay o Uruguay, entonces este clon puede ser de mucha utilidad para tu proyecto de implementación.
+Este clon de Odoo ha sido adaptado a los requerimientos de localización de empresas latinoamericanas. Si te encuentras en Panamá, Colombia, Ecuador, Perú, Chile, Argentina, Bolivia, Paraguay o Uruguay, entonces este clon puede ser de mucha utilidad para tu proyecto de implementación.
 
 Nosotros mantenemos y utilizamos este clon como base de los módulos que desarrollamos para nuestros clientes de consultoría y nube. Además hemos incluido un directorio "extra-addons" con los módulos que hacemos públicos para el beneficio de toda la comunidad.
 
-Branch Público de Cubic ERP
+Branch Público de OSSE Pub
 ---------------------------
 
-El "Branch Público CubicERP" esta ahora localizado en el directorio "extra-addons" de este clon, hemos decidido integrarlo con este clon para la facilidad de instalación y punto centralizado de atención de preguntas e incidencias.
+El "Branch Público OSSE Pub" se encuentra en el directorio "extra-addons", hemos decidido integrarlo con este clon para la facilidad de instalación y punto centralizado de atención de preguntas e incidencias.
 
-¿Por qué creamos un clon separado de odoo/odoo?
------------------------------------------------
 
-La respuesta es muy sencilla, cuando nosotros remitimos estos parches a OpenERP (ahora Odoo) no los consideraron o no los atendieron, asi como los cientos de parches no atendidos que ha enviado la comunidad a OpenERP (https://code.launchpad.net/~openerp/openobject-addons/trunk ver en Branch Merges).
-
-En esta nueva plataforma github.com estamos enviando ya, algunas contribuciones y si nos atienden, iremos enviando todos los parches para asi contar con una única copia del nuevo odoo.
-
-Soporte Comunitario Gratuito en Español
-=======================================
-
-Nos complace en anunciar, que mediante este repositorío estaremos atendiendo las consultas y soporte requerido por la comunidad de habla hispana que hubera llevado alguno de los cursos que dictamos en los diferentes países (http://cubicerp.eventbrite.com). 
-
-Este servicio de soporte no tiene SLA, es decir no tiene tiempo máximo de atención. Si usted requiere un soporte profesional en OpenERP, con nivel de servicio y atención personalizada, por favor contrate nuestro servicio de branch o nube.
-
-En caso deseen remitir código fuente para el soporte en español, este debe ser enviado mediante un "pull request" dentro del directorio "sandbox", este directorio sandbox es para almacenar todos el código fuente sobre el cual desean soporte técnico y por ningún motivo deben de incluirlo en el addons de su archivo de configuración, usualmente .openerp_serverrc
-
-Para el soporte funcional, deben remitirnos capturas de pantalla y alguna forma de ingresar a su servidor o sinó utilizar nuestras demos de openerp ubicadas en el home de nuestro website (http://cubicERP.com)
-
-Esperamos poder atenderlos con la calidad y cordialidad que nos caracteriza.
-
-Acerca de Cubic ERP
+Acerca de OSSE (http://www.osse.com.pe)
 ===================
 
-Cubic ERP le ofrece consultoría y educación en Odoo (antes OpenERP) desde 2009, nuestros principales logros:
-- Partner oficial de Odoo (antes OpenERP) desde 2010
-- Certificación FEC-V7 "Expertos en OpenERP", según PearsonVUE y OpenERP SA
-- Partner de Entrenamiento y Certificación en OpenERP
-- Top Author en apps.openerp.com con más de 75 módulos publicados
-- Pertenecemos al histórico "OpenERP Commiters Team"
-- Cinco módulos desarrollados por Cubic ERP estan incluidos en el release oficial de OpenERP
-- Consultores Expertos en OpenERP con clientes en Perú, Colombia, Chile, Ecuador, Argentina, Paraguay, Panama y Bolivia
+Somos una empresa peruana especializada en el soporte de procesos y soluciones empresariales. Brindamos servicios de asesoría, construcción y mantenimiento de los sistemas utilizados diariamente para la operación de su empresa. Contamos con más de diez años de experiencia brindando soluciones consistentes y a la medida de las necesidades de nuestros clientes. Enfocados en la optimización de costos, la simplificación de procesos y el desarrollo de nuevas oportunidades de negocio.
+
+En OSSE, la integración con nuestros clientes es vital. Permanentemente buscamos y proponemos nuevas soluciones que apoyen su crecimiento continuo. Queremos ser consideramos un área interna, un departamento… una oficina que provee soluciones y servicios a toda su organización basados en innovación, compromiso, flexibilidad y economía
 
 Nuestros Servicios
 ------------------
-- Cubic ERP Cloud - SaaS Virtual en la Nube (http://cubicerp.com/nube)
-- Consultoría Funcional y Técnica en OpenERP (http://cubicerp.com/consultoria)
-- Cursos de OpenERP, Cursos de 5 dias, Workshops de 2 dias (http://cubicerp.com/cursos)
-- Branch Privado Cubic ERP con Soporte funcional y técnico, además descuentos en horas de Consultoría  (http://cubicerp.com/branch)
+- Hosting Cloud
+- Consultoría Funcional y Técnica en Odoo/OpenERP
+- Cursos de Odoo/OpenERP
+- Branch Privado con Soporte funcional y técnico
 
 
-About OpenERP
+About Odoo/OpenERP
 -------------
 
 OpenERP is an OpenSource/Free software Enterprise Resource Planning and
 Customer Relationship Management software. More info at:
 
-    http://www.openerp.com
-
-Installation on Debian/Ubuntu
------------------------------
-
-Add the the apt repository
-
-    deb http://nightly.openerp.com/6.1/deb/ ./
-
-in your source.list and type:
-
-    $ sudo apt-get update
-    $ sudo apt-get install openerp
-
-Or download the deb file and type:
-
-    $ sudo dpkg -i <openerp-deb-filename>
-    $ sudo apt-get install install -f
-
-Installation on RedHat, Fedora, CentOS
---------------------------------------
-
-Install the required dependencies:
-
-    $ yum install python
-    $ easy_install pip
-    $ pip install .....
-
-Install the openerp rpm
-
-    $ rpm -i openerp-VERSION.rpm
-
-Installation on Windows
------------------------
-
-    Check the notes in setup.py
-
-Installation on MacOSX
------------------------
-
-Setuping you first database
----------------------------
-
-Point your browser to http://localhost:8069/ and click "Manage Databases", the
-default master password is "admin".
-
-Detailed System Requirements
-----------------------------
-
-The dependencies are listed in setup.py
-
-For Luxembourg localization, you also need:
-
- pdftk (http://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/)
-
+    http://www.odoo.com
