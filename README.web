@@ -1,4 +1,4 @@
-OpenERP Web
+Odoo/OpenERP Web
 -----------
 
 The OpenERP Web Client supports the following web browsers:
@@ -7,5 +7,3 @@ The OpenERP Web Client supports the following web browsers:
 * Google Chrome 22+
 * Firefox 13+
 * Any browser using the latest version of Chrome Frame
-
-
